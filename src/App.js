@@ -14,7 +14,7 @@ function App() {
   const lastTtsCall = useRef(Date.now());
 
   let voices = window.speechSynthesis.getVoices();
-  const voice = voices[24];
+  const voice = voices[1];
 
 
   const debounceTts = (message) => {
@@ -154,7 +154,7 @@ function App() {
       </header>
       <button onClick={() => {
         let voices = window.speechSynthesis.getVoices();
-        const voice = voices[24];
+        const voice = voices[1];
         tts("Started", voice);
         setStarted(true);
       }}>Start</button>
